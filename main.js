@@ -17,6 +17,7 @@ function selectUserInput(option) {
         document.getElementById('weightInput').addEventListener('input', function(e) {
         document.getElementById('output').style.visibility = 'visible'
         let weightInput = e.target.value;
+        option = document.getElementById('selectUnit').value;
         calculateWeight(option, weightInput)
     })
     } else {
